@@ -58,15 +58,15 @@ if($order->num_rows > 0){
                             <p class="m-0"><small>Brand: <?php echo $row['bname']?></small></p>
                            
                         </td>
-                        <td class="text-right"><?php echo number_format($row['price']) ?></td>
-                        <td class="text-right"><?php echo number_format($row['price'] * $row['quantity']) ?></td>
+                        <td class="text-right"><h5>R</h5><?php echo number_format($row['price']) ?></td>
+                        <td class="text-right"><h5>R</h5><?php echo number_format($row['price'] * $row['quantity']) ?></td>
                     </tr>
                     <?php endwhile; ?>
                 </tbody>
                 <tfoot>
                     <tr>
                         <th colspan='3'  class="text-right">Total</th>
-                        <th class="text-right"><?php echo number_format($amount) ?></th>
+                        <th class="text-right"><h5>R</h5><?php echo number_format($amount) ?></th>
                     </tr>
                 </tfoot>
             </table>
