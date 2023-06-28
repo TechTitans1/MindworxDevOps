@@ -306,7 +306,7 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                             <!-- Product price-->
-                                <span><b>Price: </b><?php echo number_format($row['price'], 2) ?></span>
+                                <span><b>Price: <?php echo number_format($row['price'], 2) ?></b></span>
                             <p class="m-0"><small>Brand: <?php echo $row['bname'] ?></small></p>
                         </div>
                     </div>
