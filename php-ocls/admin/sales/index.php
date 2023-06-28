@@ -15,11 +15,11 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
         <form id="filter-form">
             <div class="row align-items-end">
                 <div class="form-group col-md-3">
-                    <label for="date_start">Date Start</label>
+                    <label for="date_start">Start Date</label>
                     <input type="date" class="form-control form-control-sm" name="date_start" value="<?php echo date("Y-m-d",strtotime($date_start)) ?>">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="date_start">Date End</label>
+                    <label for="date_start">End Date</label>
                     <input type="date" class="form-control form-control-sm" name="date_end" value="<?php echo date("Y-m-d",strtotime($date_end)) ?>">
                 </div>
                 <div class="form-group col-md-1">
