@@ -322,7 +322,7 @@ table {
 caption {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    color: #6c757d;
+    color: #fff;/*  #6c757d to #fff            */
     text-align: left;
 }
 
@@ -615,7 +615,7 @@ progress {
     margin-top: -1rem;
     margin-bottom: 1rem;
     font-size: 0.875em;
-    color: #6c757d;
+    color: #6c757d;/*      */
 }
 
 .blockquote-footer::before {
@@ -4243,8 +4243,8 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: #6c757d;/*edited by Tebogo from #fff */
-    background-color: #024974;/*edited from #0d6efd*/
+    color: #fff;/*edited by Tebogo from #fff */
+    background-color: #0d6efd;/*edited from #0d6efd*/
 }
 
 .nav-fill>.nav-link,
