@@ -101,7 +101,7 @@ elseif(isset($_GET['s'])){
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                                     <!-- Product price-->
-                                        <span><b>Price: </b><?php echo number_format($row['price'], 2) ?></span>
+                                        <span><b>Price: R </b><?php echo number_format($row['price'], 2) ?></span>
                                 </div>
                                 <p class="m-0"><small><b>Brand:</b> <?php echo $row['bname'] ?></small></p>
                             </div>
