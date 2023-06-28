@@ -1,4 +1,4 @@
-<h1>Welcome to <?php echo $_settings->info('name') ?></h1>
+<h1>Admin Dashboard <?php echo $_settings->info('name') ?></h1>
 <hr>
 <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
