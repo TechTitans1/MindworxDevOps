@@ -32,7 +32,7 @@
                             <div>
                                 <p class="mb-1 mb-sm-1"><?php echo $row['name'] ?></p>
                                 
-                                <p class="mb-1 mb-sm-1"><small><b>Price:</b> <span class="price"><?php echo number_format($row['price']) ?></span></small></p>
+                                <p class="mb-1 mb-sm-1"><small><b>Price: R </b> <span class="price"><?php echo number_format($row['price']) ?></span></small></p>
                                 <div>
                                 <div class="input-group" style="width:130px !important">
                                     <div class="input-group-prepend">
