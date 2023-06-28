@@ -62,7 +62,7 @@
                 <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $name ?></h1>
                 <p class="m-0"><small><b>Brand:</b> <?php echo $bname ?></small></p>
                 <div class="fs-5 mb-5">
-                &#8369; <span id="price"><?php echo number_format($price) ?></span>
+                 R<span id="price"><?php echo number_format($price) ?></span>
                 <br>
                 <span><small><b>Available Stock:</b> <span id="avail"><?php echo $inv[0]['quantity'] - ($sold ?? 0) ?></span></small></span>
                 </div>
@@ -308,7 +308,7 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                             <!-- Product price-->
-                                <span><b>Price: </b><?php echo number_format($row['price'], 2) ?></span>
+                                <span><b>Price: R </b><?php echo number_format($row['price'], 2) ?></span>
                             <p class="m-0"><small>Brand: <?php echo $row['bname'] ?></small></p>
                         </div>
                     </div>

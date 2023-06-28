@@ -71,7 +71,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 			</div>
 			<div class="form-group">
 				<label for="price" class="control-label">Product Price</label>
-                <input type="number" step="any" name="price" id="price" class="form-control rounded-0" required value="<?php echo isset($price) ?$price : '' ?>" />
+                <input type="number" step="any" name="price" id="price" class="form-control rounded-0" required value="<?php echo isset($price) ?$price : 'R' ?>" />
 			</div>
             <div class="form-group">
 				<label for="specs" class="control-label">Specifications</label>

@@ -83,7 +83,7 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
                             <p class="m-0"><small>Email: <?php echo $roww['email'] ?></small></p>
                         </td>
                         <td class="text-center"><?php echo $roww['quantity'] ?></td>
-                        <td class="text-right"><?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
+                        <td class="text-right">R<?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
                     </tr>
                     <?php endwhile; ?>
                     <?php endwhile; ?>
