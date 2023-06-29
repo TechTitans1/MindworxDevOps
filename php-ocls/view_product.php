@@ -23,11 +23,13 @@
     $sold = $sold->num_rows > 0 ? $sold->fetch_assoc()['sold'] : 0;
  }
 ?>
+<!-- Change background color from black to whiite-->
 <style>
+   
     #display-img{
         width:100%;
         height: 60vh;
-        background:#242424;
+        background:#ffffff;
     }
     #display-img>img{
         height:100%;
@@ -60,7 +62,7 @@
                 <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $name ?></h1>
                 <p class="m-0"><small><b>Brand: <?php echo $bname ?></b></small></p>
                 <div class="fs-5 mb-5">
-                &#8369; <b><span id="price"><?php echo number_format($price) ?></span></b>
+                 R<span id="price"><?php echo number_format($price) ?></span>
                 <br>
                 <span><small><b>Available Stock:</b> <span id="avail"><?php echo $inv[0]['quantity'] - ($sold ?? 0) ?></span></small></span>
                 </div>
@@ -306,8 +308,8 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                             <!-- Product price-->
-                                <span><b>Price:R <?php echo number_format($row['price'], 2) ?></b></span>
-                            <p class="m-0"><small><b>Brand: <?php echo $row['bname'] ?></b></small></p>
+                                <span><b>Price: R </b><?php echo number_format($row['price'], 2) ?></span>
+                            <p class="m-0"><small>Brand: <?php echo $row['bname'] ?></small></p>
                         </div>
                     </div>
                 </a>

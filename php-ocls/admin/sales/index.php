@@ -15,11 +15,11 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
         <form id="filter-form">
             <div class="row align-items-end">
                 <div class="form-group col-md-3">
-                    <label for="date_start">Date Start</label>
+                    <label for="date_start">Start Date</label>
                     <input type="date" class="form-control form-control-sm" name="date_start" value="<?php echo date("Y-m-d",strtotime($date_start)) ?>">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="date_start">Date End</label>
+                    <label for="date_start">End Date</label>
                     <input type="date" class="form-control form-control-sm" name="date_end" value="<?php echo date("Y-m-d",strtotime($date_end)) ?>">
                 </div>
                 <div class="form-group col-md-1">
@@ -83,7 +83,7 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
                             <p class="m-0"><small>Email: <?php echo $roww['email'] ?></small></p>
                         </td>
                         <td class="text-center"><?php echo $roww['quantity'] ?></td>
-                        <td class="text-right"><?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
+                        <td class="text-right">R<?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
                     </tr>
                     <?php endwhile; ?>
                     <?php endwhile; ?>

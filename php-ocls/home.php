@@ -103,7 +103,7 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                                     <!-- Product price-->
-                                        <span><b>Price: <?php echo number_format($row['price'],2) ?></b></span>
+                                        <span><b>Price: R </b><?php echo number_format($row['price'],2) ?></span>
                                 </div>
                                 <p class="m-0"><small><b>Brand: <?php echo $row['bname'] ?></b></small></p>
                             </div>

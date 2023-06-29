@@ -46,7 +46,8 @@ elseif(isset($_GET['s'])){
     <div class="container-fluid row">
         <?php if(isset($_GET['c'])): ?>
         <div class="col-md-3 border-right mb-2 pb-3">
-            <h3><b>Sub Categories</b></h3>
+            <!-- Remove Sub-->
+            <h3><b>Categories</b></h3>
             <div class="list-group">
                 <a href="./?p=products&c=<?php echo $_GET['c'] ?>" class="list-group-item <?php echo !isset($_GET['s']) ? "active" : "" ?>">All</a>
                 <?php 
@@ -100,7 +101,7 @@ elseif(isset($_GET['s'])){
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                                     <!-- Product price-->
-                                    <span><b>Price: <?php echo number_format($row['price'], 2) ?></b></span>
+                                        <span><b>Price: R </b><?php echo number_format($row['price'], 2) ?></span>
                                 </div>
                                 <p class="m-0"><small><b>Brand: <?php echo $row['bname'] ?></b></small></p>
                             </div>
