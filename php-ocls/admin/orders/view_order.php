@@ -39,7 +39,7 @@ if($order->num_rows > 0){
                     <tr>
                         <th>QTY</th>
                         <th>Product</th>
-                        <th>Price</th>
+                        <th>Price Per Unit</th>
                         <th>Total</th>
                     </tr>
                 </thead>
