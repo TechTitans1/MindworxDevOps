@@ -40,7 +40,7 @@
                         </a>
                         
                             <a href="./?p=my_account" class="nav-link text-white"><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></a>
-                            <a href="logout.php" class="nav-link text-white"><i class="fa fa-sign-out-alt"></i></a>
+                            <a href="logout.php" class="nav-link text-white"> Logout</a>
                         <?php endif; ?>
                     </div>
                 </div>
