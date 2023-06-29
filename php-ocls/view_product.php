@@ -58,9 +58,9 @@
             <div class="col-md-6">
                 <!-- <div class="small mb-1">SKU: BST-498</div> -->
                 <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $name ?></h1>
-                <p class="m-0"><small><b>Brand:</b> <?php echo $bname ?></small></p>
+                <p class="m-0"><small><b>Brand: <?php echo $bname ?></b></small></p>
                 <div class="fs-5 mb-5">
-                &#8369; <span id="price"><?php echo number_format($price) ?></span>
+                &#8369; <b><span id="price"><?php echo number_format($price) ?></span></b>
                 <br>
                 <span><small><b>Available Stock:</b> <span id="avail"><?php echo $inv[0]['quantity'] - ($sold ?? 0) ?></span></small></span>
                 </div>
@@ -306,8 +306,8 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder"><?php echo $row['name'] ?></h5>
                             <!-- Product price-->
-                                <span><b>Price: <?php echo number_format($row['price'], 2) ?></b></span>
-                            <p class="m-0"><small>Brand: <?php echo $row['bname'] ?></small></p>
+                                <span><b>Price:R <?php echo number_format($row['price'], 2) ?></b></span>
+                            <p class="m-0"><small><b>Brand: <?php echo $row['bname'] ?></b></small></p>
                         </div>
                     </div>
                 </a>
