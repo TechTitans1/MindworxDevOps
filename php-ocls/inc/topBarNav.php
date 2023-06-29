@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-navy">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid px-4 px-lg-5 ">
                 <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <a class="navbar-brand" href="./">
@@ -40,7 +40,7 @@
                         </a>
                         
                             <a href="./?p=my_account" class="nav-link text-white"><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></a>
-                            <a href="logout.php" class="nav-link text-white"><i class="fa fa-sign-out-alt"></i></a>
+                            <a href="logout.php" class="nav-link text-white"> Logout</a>
                         <?php endif; ?>
                     </div>
                 </div>
